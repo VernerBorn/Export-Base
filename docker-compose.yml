@@ -1,0 +1,9 @@
+version: "3.0"
+
+services:
+  nginx:
+    image: nginx
+    ports:
+      - 9000:80
+    volumes:
+      - ./src/client:/usr/share/nginx/html
